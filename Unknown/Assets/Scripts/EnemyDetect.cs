@@ -13,14 +13,16 @@ public class EnemyDetect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+/*
         target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
+*/
     }
 
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector3.Distance(target.position, transform.position);
+/*        float distance = Vector3.Distance(target.position, transform.position);
 
         if(distance <= lookRadius)
         {
@@ -33,6 +35,7 @@ public class EnemyDetect : MonoBehaviour
                 FaceTarget();
             }
         }
+  */
     }
 
     void FaceTarget()
