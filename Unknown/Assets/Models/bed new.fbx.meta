@@ -25,7 +25,37 @@ ModelImporter:
     4300002: polySurface2
     6400000: polySurface1
     6400002: polySurface2
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bed
+    second: {fileID: 2100000, guid: bc55c7c604e5c6a4da41c0961c50bc9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bed2
+    second: {fileID: 2100000, guid: 3ae33a0f9f96e3640b37492b7220ede4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: comforter
+    second: {fileID: 2100000, guid: e9ac493a285a40043b952b1a221eefdc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fold
+    second: {fileID: 2100000, guid: f9ec9d7eb983fef409c2cc1ee25e6a77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mattress
+    second: {fileID: 2100000, guid: 2ca1105c149a2a145b36d9cb3df61f7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pillows
+    second: {fileID: 2100000, guid: f16bb980c879d964c9e42529e58e631a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -56,7 +86,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 100
     meshCompression: 0
     addColliders: 1
     useSRGBMaterialColor: 1
