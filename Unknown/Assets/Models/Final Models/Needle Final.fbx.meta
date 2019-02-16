@@ -1,32 +1,20 @@
 fileFormatVersion: 2
-guid: 34f397b6b06a4f1488941d0033f5da04
+guid: 4e31b2eaa6d25434f909edf4ef166fe1
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: knobs
-    2100002: dresser
+    2100000: lambert1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: polySurface14
-    6400000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: dresser
-    second: {fileID: 2100000, guid: a58acae770bcef34fba908530fdb5cdf, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: knobs
-    second: {fileID: 2100000, guid: 2016c0a001eefbc45b0b588ec7837c99, type: 2}
+    4300000: Needle
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -54,7 +42,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 100
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
