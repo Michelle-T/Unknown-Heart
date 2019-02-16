@@ -11,7 +11,23 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Doll
-  externalObjects: {}
+    6400000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body
+    second: {fileID: 2100000, guid: 045a5e642ec721e4f9e03ee30146c613, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: button
+    second: {fileID: 2100000, guid: 5c32490d187dc194890b34ed7d36a0ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: heart
+    second: {fileID: 2100000, guid: a8a7d4121b100f346912006ca97e6341, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -44,7 +60,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 100
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
