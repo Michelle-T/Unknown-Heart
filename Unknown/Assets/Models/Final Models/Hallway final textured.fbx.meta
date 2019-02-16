@@ -1,14 +1,26 @@
 fileFormatVersion: 2
-guid: 3e0018dce7d0cb046996b58b21c9bba3
+guid: e618437fee850994f941bbb2af4ea06d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
+    2100000: outside_walls
+    2100002: lambert1
+    2100004: hallway_walls
+    2100006: end_room_walls
+    2100008: outside_roof
+    2100010: bedroom_walls
+    2100012: hallway_ceiling
+    2100014: bedroom_ceiling
+    2100016: end_room_ceiling
+    2100018: end_room_floor
+    2100020: bedroom_floor
+    2100022: hallway_floor
     2300000: //RootNode
     3300000: //RootNode
     4300000: Hallway
+    6400000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -42,7 +54,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 100
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
