@@ -1,27 +1,15 @@
 fileFormatVersion: 2
-guid: 3dce1b72526936c4c8026d8a2044212f
+guid: 4e31b2eaa6d25434f909edf4ef166fe1
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: legs
-    2100002: cushion
+    2100000: lambert1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: polySurface10
-    6400000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: cushion
-    second: {fileID: 2100000, guid: 6fbca6e396a50f94cb02c6fe2d718985, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: legs
-    second: {fileID: 2100000, guid: fd872f7a0824c784e90189ef43a94c35, type: 2}
+    4300000: Needle
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -52,9 +40,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 100
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

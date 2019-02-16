@@ -16,12 +16,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: dresser
-    second: {fileID: 2100000, guid: 2a0b5e631fa2f5d45a0e81758cfbf83f, type: 2}
+    second: {fileID: 2100000, guid: a58acae770bcef34fba908530fdb5cdf, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: knobs
-    second: {fileID: 2100000, guid: f4cffca3d7b7ecd4b84425dfe64cb083, type: 2}
+    second: {fileID: 2100000, guid: 2016c0a001eefbc45b0b588ec7837c99, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -52,7 +52,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 100
     meshCompression: 0
     addColliders: 1
     useSRGBMaterialColor: 1

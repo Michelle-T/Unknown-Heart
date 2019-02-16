@@ -6,29 +6,36 @@ using UnityEngine.UI;
 
 public class PauseMenu1 : MonoBehaviour
 {
-
+    //public Camera playerCam;
+    //public Camera menuCam;
     public Button resumeButton;
     public Button restartButton;
     public Button MainMenuButton;
     public Button quitGameButton;
-    public string resumeSceneName;
+    public string mainMenuSceneName;
+    public string newGameSceneName;
     public GameObject[] pauseObjects;
+    public GameObject[] unpauseObjects;
 
-
-    public GameObject loadGameMenu;
 
     public void Awake(){
       resumeButton.onClick.AddListener(Resume);
-      MainMenuButton.onClick.AddListener(OpenLoadGameMenu);
+      MainMenuButton.onClick.AddListener(goMainMenu);
+      restartButton.onClick.AddListener(goNewGame);
       quitGameButton.onClick.AddListener(ExitGame);
     }
 
-    public void Resume() {
-        SceneManager.LoadScene(resumeSceneName);
+    public void goNewGame () {
+      SceneManager.LoadScene(newGameSceneName);
     }
 
-    public void OpenLoadGameMenu() {
-      loadGameMenu.SetActive(true);
+    public void goMainMenu () {
+      SceneManager.LoadScene(mainMenuSceneName);
+    }
+
+    public void Resume() {
+        Time.timeScale = 1;
+        hidePaused();
     }
 
     public void ExitGame() {
@@ -51,12 +58,18 @@ public class PauseMenu1 : MonoBehaviour
       foreach(GameObject g in pauseObjects){
         g.SetActive(true);
       }
+      foreach(GameObject g in unpauseObjects){
+        g.SetActive(false);
+      }
     }
 
     //hides objects with ShowOnPause tag
     public void hidePaused(){
       foreach(GameObject g in pauseObjects){
         g.SetActive(false);
+      }
+      foreach(GameObject g in unpauseObjects){
+        g.SetActive(true);
       }
     }
 
@@ -65,9 +78,11 @@ public class PauseMenu1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+      //playerCam.enabled = true;
+      //menuCam.enabled = false;
       Time.timeScale = 1;
       pauseObjects = GameObject.FindGameObjectsWithTag("ShowOnPause");
+      unpauseObjects = GameObject.FindGameObjectsWithTag("HideOnPause");
       hidePaused();
       Awake();
 
@@ -80,9 +95,13 @@ public class PauseMenu1 : MonoBehaviour
       {
         if(Time.timeScale == 1)
         {
+          //menuCam.enabled = !menuCam.enabled;
+          //playerCam.enabled = !playerCam.enabled;
           Time.timeScale = 0;
           showPaused();
         } else if (Time.timeScale == 0){
+          //menuCam.enabled = !menuCam.enabled;
+          //playerCam.enabled = !playerCam.enabled;
           Debug.Log ("high");
           Time.timeScale = 1;
           hidePaused();
