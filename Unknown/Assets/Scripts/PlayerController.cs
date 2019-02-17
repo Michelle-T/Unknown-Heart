@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour {
 
     public Interactable focus;
 
+    public LayerMask enemyMask;
+
     Camera cam;
 
 	// Use this for initialization
@@ -22,13 +24,15 @@ public class PlayerController : MonoBehaviour {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, 100))
+            if (Physics.Raycast(ray, out hit, 100, enemyMask))
             {
-                Interactable interactable = hit.collider.GetComponent<Interactable>();
+                Debug.Log("We hit " + hit.collider.name + " " + hit.point);
+                /*Interactable interactable = hit.collider.GetComponent<Interactable>();
                 if (interactable != null)
                 {
                     SetFocus(interactable);
                 }
+                */
             }
         }
 	}
