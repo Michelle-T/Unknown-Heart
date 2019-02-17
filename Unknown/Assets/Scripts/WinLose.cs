@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class WinLose : MonoBehaviour
 {
-    //public Camera playerCam;
-    //public Camera menuCam;
     public Button restartButton;
     public Button MainMenuButton;
     public Button quitGameButton;
@@ -31,11 +29,6 @@ public class WinLose : MonoBehaviour
       SceneManager.LoadScene(mainMenuSceneName);
     }
 
-    public void Resume() {
-        Time.timeScale = 1;
-        hidePaused();
-    }
-
     public void ExitGame() {
       Application.Quit();
     }
@@ -44,15 +37,15 @@ public class WinLose : MonoBehaviour
         if(Time.timeScale == 1)
         {
           Time.timeScale = 0;
-          showPaused();
+          showWin();
         } else if (Time.timeScale == 0){
           Time.timeScale = 1;
-          hidePaused();
+          hideWin();
         }
     }
 
-    //shows objects with ShowOnPause tag
-    public void showPaused(){
+    //shows objects with Win tag
+    public void showWin(){
       foreach(GameObject g in lose){
         g.SetActive(true);
       }
@@ -61,8 +54,8 @@ public class WinLose : MonoBehaviour
       }
     }
 
-    //hides objects with ShowOnPause tag
-    public void hidePaused(){
+    //hides objects with Win tag
+    public void hideWin(){
       foreach(GameObject g in lose){
         g.SetActive(false);
       }
@@ -70,20 +63,15 @@ public class WinLose : MonoBehaviour
         g.SetActive(true);
       }
     }
-
-
 
     // Start is called before the first frame update
     void Start()
     {
-      //playerCam.enabled = true;
-      //menuCam.enabled = false;
       Time.timeScale = 1;
       lose = GameObject.FindGameObjectsWithTag("Lose");
       win = GameObject.FindGameObjectsWithTag("Win");
-      hidePaused();
+      hideWin();
       Awake();
-
     }
 
     // Update is called once per frame
@@ -93,16 +81,12 @@ public class WinLose : MonoBehaviour
       {
         if(Time.timeScale == 1)
         {
-          //menuCam.enabled = !menuCam.enabled;
-          //playerCam.enabled = !playerCam.enabled;
           Time.timeScale = 0;
-          showPaused();
-        } else if (Time.timeScale == 0){
-          //menuCam.enabled = !menuCam.enabled;
-          //playerCam.enabled = !playerCam.enabled;
-          Debug.Log ("high");
+          showWin();
+        }
+        else if (Time.timeScale == 0){
           Time.timeScale = 1;
-          hidePaused();
+          hideWin();
         }
       }
     }

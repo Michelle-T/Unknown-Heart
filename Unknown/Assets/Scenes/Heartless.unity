@@ -3603,7 +3603,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 0206e9649cb550742bd52a82dc0774ea, type: 3}
       propertyPath: m_Name
-      value: Voodoo Doll Guard
+      value: Voodoo Doll
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0206e9649cb550742bd52a82dc0774ea, type: 3}
       propertyPath: m_LocalPosition.x

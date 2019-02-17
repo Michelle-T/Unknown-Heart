@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class PauseMenu1 : MonoBehaviour
 {
-    //public Camera playerCam;
-    //public Camera menuCam;
     public Button resumeButton;
     public Button restartButton;
     public Button MainMenuButton;
@@ -74,18 +72,14 @@ public class PauseMenu1 : MonoBehaviour
     }
 
 
-
     // Start is called before the first frame update
     void Start()
     {
-      //playerCam.enabled = true;
-      //menuCam.enabled = false;
       Time.timeScale = 1;
       pauseObjects = GameObject.FindGameObjectsWithTag("ShowOnPause");
       unpauseObjects = GameObject.FindGameObjectsWithTag("HideOnPause");
       hidePaused();
       Awake();
-
     }
 
     // Update is called once per frame
@@ -95,14 +89,11 @@ public class PauseMenu1 : MonoBehaviour
       {
         if(Time.timeScale == 1)
         {
-          //menuCam.enabled = !menuCam.enabled;
-          //playerCam.enabled = !playerCam.enabled;
+
           Time.timeScale = 0;
           showPaused();
-        } else if (Time.timeScale == 0){
-          //menuCam.enabled = !menuCam.enabled;
-          //playerCam.enabled = !playerCam.enabled;
-          Debug.Log ("high");
+        }
+        else if (Time.timeScale == 0){
           Time.timeScale = 1;
           hidePaused();
         }
