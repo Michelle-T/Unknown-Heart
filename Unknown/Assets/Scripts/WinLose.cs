@@ -4,20 +4,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PauseMenu1 : MonoBehaviour
+public class WinLose : MonoBehaviour
 {
-    public Button resumeButton;
     public Button restartButton;
     public Button MainMenuButton;
     public Button quitGameButton;
     public string mainMenuSceneName;
     public string newGameSceneName;
-    public GameObject[] pauseObjects;
-    public GameObject[] unpauseObjects;
+    public GameObject[] lose;
+    public GameObject[] win;
 
 
     public void Awake(){
-      resumeButton.onClick.AddListener(Resume);
       MainMenuButton.onClick.AddListener(goMainMenu);
       restartButton.onClick.AddListener(goNewGame);
       quitGameButton.onClick.AddListener(ExitGame);
@@ -31,11 +29,6 @@ public class PauseMenu1 : MonoBehaviour
       SceneManager.LoadScene(mainMenuSceneName);
     }
 
-    public void Resume() {
-        Time.timeScale = 1;
-        hidePaused();
-    }
-
     public void ExitGame() {
       Application.Quit();
     }
@@ -44,41 +37,40 @@ public class PauseMenu1 : MonoBehaviour
         if(Time.timeScale == 1)
         {
           Time.timeScale = 0;
-          showPaused();
+          showWin();
         } else if (Time.timeScale == 0){
           Time.timeScale = 1;
-          hidePaused();
+          hideWin();
         }
     }
 
-    //shows objects with ShowOnPause tag
-    public void showPaused(){
-      foreach(GameObject g in pauseObjects){
+    //shows objects with Win tag
+    public void showWin(){
+      foreach(GameObject g in lose){
         g.SetActive(true);
       }
-      foreach(GameObject g in unpauseObjects){
+      foreach(GameObject g in win){
         g.SetActive(false);
       }
     }
 
-    //hides objects with ShowOnPause tag
-    public void hidePaused(){
-      foreach(GameObject g in pauseObjects){
+    //hides objects with Win tag
+    public void hideWin(){
+      foreach(GameObject g in lose){
         g.SetActive(false);
       }
-      foreach(GameObject g in unpauseObjects){
+      foreach(GameObject g in win){
         g.SetActive(true);
       }
     }
-
 
     // Start is called before the first frame update
     void Start()
     {
       Time.timeScale = 1;
-      pauseObjects = GameObject.FindGameObjectsWithTag("ShowOnPause");
-      unpauseObjects = GameObject.FindGameObjectsWithTag("HideOnPause");
-      hidePaused();
+      lose = GameObject.FindGameObjectsWithTag("Lose");
+      win = GameObject.FindGameObjectsWithTag("Win");
+      hideWin();
       Awake();
     }
 
@@ -89,13 +81,12 @@ public class PauseMenu1 : MonoBehaviour
       {
         if(Time.timeScale == 1)
         {
-
           Time.timeScale = 0;
-          showPaused();
+          showWin();
         }
         else if (Time.timeScale == 0){
           Time.timeScale = 1;
-          hidePaused();
+          hideWin();
         }
       }
     }

@@ -1,33 +1,21 @@
 fileFormatVersion: 2
-guid: 426bec945602aca41b04815267587542
+guid: 8223f208638b6604ebe5c28a99d2796d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: frame
-    2100002: side2
-    2100004: side1
+    2100000: heart
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Window
+    4300000: pCube3
     6400000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: frame
-    second: {fileID: 2100000, guid: c0412896ac792bc4d82516ec3b604c2d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: side1
-    second: {fileID: 2100000, guid: 973cb236591225340922d368e181bc42, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: side2
-    second: {fileID: 2100000, guid: 16e070b9e83c0894ab1f606e30458bb8, type: 2}
+      name: heart
+    second: {fileID: 2100000, guid: a8a7d4121b100f346912006ca97e6341, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

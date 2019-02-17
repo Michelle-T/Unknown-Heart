@@ -6,14 +6,9 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-
     public Button newGameButton;
-//    public Button loadButton;
     public Button quitGameButton;
     public string newGameSceneName;
-
-//    public GameObject loadGame;
-
     public bool isPlay;
     public bool isQuit;
 
@@ -22,34 +17,22 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(newGameSceneName);
     }
 
-/*    public void OpenloadGame() {
-      Debug.Log("what is thisssss");
-      loadGame.SetActive(true);
-    }
-*/
-
     public void QuitGame() {
       Application.Quit();
     }
-
 
     public void clickListener(){
       newGameButton.onClick.AddListener(NewGame);
       quitGameButton.onClick.AddListener(QuitGame);
     }
 
-
-
     void OnMouseUp(){
-      Debug.Log("clickajnvsdkbsvclick");
   	if (isQuit)
   	{
-      Debug.Log("quitttt");
   		Application.Quit();
   	}
     if(isPlay)
   	{
-      Debug.Log("playyyyyyy");
   		NewGame();
   	}
   }
