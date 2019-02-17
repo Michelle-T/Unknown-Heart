@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: needle
+  m_Name: legs
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: cc51e2c5039c0b74e9b24d428ec34556, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7f8025ffd9c2ad941aa5ed75601b6824, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -61,9 +61,9 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.273
+    - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Metallic: 0.337
+    - _Metallic: 0.401
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
