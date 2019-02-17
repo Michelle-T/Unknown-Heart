@@ -11,12 +11,28 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Window
-  externalObjects: {}
+    6400000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: frame
+    second: {fileID: 2100000, guid: c0412896ac792bc4d82516ec3b604c2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side1
+    second: {fileID: 2100000, guid: 973cb236591225340922d368e181bc42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side2
+    second: {fileID: 2100000, guid: 16e070b9e83c0894ab1f606e30458bb8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -44,7 +60,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 300
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

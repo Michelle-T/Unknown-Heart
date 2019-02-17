@@ -533,7 +533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4956c1b02a0504b48962565398fedc93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.424
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4956c1b02a0504b48962565398fedc93, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1680,7 +1680,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 70e149a2d3bd6e844ad60cda3d233f5b, type: 3}
       propertyPath: m_Name
-      value: Bed Final
+      value: Bed Final 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70e149a2d3bd6e844ad60cda3d233f5b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1738,6 +1738,26 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.5000076
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 70e149a2d3bd6e844ad60cda3d233f5b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 06e4012d384a79441abb130cba850bc1, type: 2}
+    - target: {fileID: 2300000, guid: 70e149a2d3bd6e844ad60cda3d233f5b, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 24fb353683100be43ac23f8c3ea45fc2, type: 2}
+    - target: {fileID: 2300000, guid: 70e149a2d3bd6e844ad60cda3d233f5b, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a991863d189f67438538a60bc4fca2c, type: 2}
+    - target: {fileID: 2300000, guid: 70e149a2d3bd6e844ad60cda3d233f5b, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5991e4104ba21c04f897db539be1367e, type: 2}
+    - target: {fileID: 2300000, guid: 70e149a2d3bd6e844ad60cda3d233f5b, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7fda4f7be23fa344a965effdf18f6284, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70e149a2d3bd6e844ad60cda3d233f5b, type: 3}
 --- !u!4 &810763352 stripped
@@ -1960,6 +1980,11 @@ PrefabInstance:
     - target: {fileID: 7795211947316147120, guid: 1ec12e23354c0fe40858a8192fcf5f64,
         type: 3}
       propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7795211947316147120, guid: 1ec12e23354c0fe40858a8192fcf5f64,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7795211947316146764, guid: 1ec12e23354c0fe40858a8192fcf5f64,
