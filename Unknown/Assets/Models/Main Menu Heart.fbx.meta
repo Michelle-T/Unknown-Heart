@@ -1,15 +1,21 @@
 fileFormatVersion: 2
-guid: 3e0018dce7d0cb046996b58b21c9bba3
+guid: 8223f208638b6604ebe5c28a99d2796d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
+    2100000: heart
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Hallway
-  externalObjects: {}
+    4300000: pCube3
+    6400000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: heart
+    second: {fileID: 2100000, guid: a8a7d4121b100f346912006ca97e6341, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -42,7 +48,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 100
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
