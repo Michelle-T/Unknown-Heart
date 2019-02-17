@@ -6,6 +6,8 @@ TagManager:
   tags:
   - ShowOnPause
   - HideOnPause
+  - Win
+  - Lose
   layers:
   - Default
   - TransparentFX
