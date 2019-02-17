@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: 5ce219257c54b814785b0b3c1eecb4ac
+guid: 67dc058108ba2d446a79d1905299f6ea
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
+    2100000: knobs
+    2100002: dresser
     2300000: //RootNode
     3300000: //RootNode
     4300000: Dresser
@@ -14,7 +15,7 @@ ModelImporter:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0

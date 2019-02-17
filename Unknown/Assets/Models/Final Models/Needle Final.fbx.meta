@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: 4e31b2eaa6d25434f909edf4ef166fe1
+guid: b35da2a16c3385940b0dd65603e74556
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
+    2100000: needle
+    2100002: ball
     2300000: //RootNode
     3300000: //RootNode
     4300000: Needle
@@ -14,7 +15,7 @@ ModelImporter:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
