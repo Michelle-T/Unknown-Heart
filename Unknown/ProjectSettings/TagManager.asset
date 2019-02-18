@@ -6,6 +6,11 @@ TagManager:
   tags:
   - ShowOnPause
   - HideOnPause
+  - Win
+  - Lose
+  - Pick Up
+  - PickUp
+  - Heart
   layers:
   - Default
   - TransparentFX
