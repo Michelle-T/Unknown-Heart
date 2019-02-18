@@ -27,18 +27,9 @@ public class PlayerController : MonoBehaviour {
             if (Physics.Raycast(ray, out hit, 100, enemyMask))
             {
                 Debug.Log("We hit " + hit.collider.name + " " + hit.point);
-                /*Interactable interactable = hit.collider.GetComponent<Interactable>();
-                if (interactable != null)
-                {
-                    SetFocus(interactable);
-                }
-                */
+                Interactable interactable = hit.collider.GetComponent<Interactable>();
+                
             }
         }
 	}
-
-    void SetFocus (Interactable newFocus)
-    {
-        focus = newFocus;
-    }
 }
