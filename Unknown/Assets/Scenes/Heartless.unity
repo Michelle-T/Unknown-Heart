@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2338,9 +2338,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 259b45a796ef3554a9ece5a0efef8057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restartButton: {fileID: 1706697391}
-  MainMenuButton: {fileID: 106621678}
-  quitGameButton: {fileID: 369497804}
+  restartButton: {fileID: 0}
+  MainMenuButton: {fileID: 0}
+  quitGameButton: {fileID: 0}
   mainMenuSceneName: Main Menu
   newGameSceneName: Heartless
   lose: []
@@ -6286,7 +6286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -6.25}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1706697391
@@ -7244,11 +7244,15 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: b73c9ca9bb6a0da47953c006560e7b9a, type: 3}
+    - target: {fileID: 100004, guid: b73c9ca9bb6a0da47953c006560e7b9a, type: 3}
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 100004, guid: b73c9ca9bb6a0da47953c006560e7b9a, type: 3}
+    - target: {fileID: 100022, guid: b73c9ca9bb6a0da47953c006560e7b9a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b73c9ca9bb6a0da47953c006560e7b9a, type: 3}
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
@@ -7281,10 +7285,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100020, guid: b73c9ca9bb6a0da47953c006560e7b9a, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100022, guid: b73c9ca9bb6a0da47953c006560e7b9a, type: 3}
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
