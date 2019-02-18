@@ -28,8 +28,17 @@ public class PlayerController : MonoBehaviour {
             {
                 Debug.Log("We hit " + hit.collider.name + " " + hit.point);
                 Interactable interactable = hit.collider.GetComponent<Interactable>();
-                
+                if(interactable != null)
+                {
+                    SetFocus(interactable);
+                }
             }
         }
 	}
+    
+    void SetFocus(Interactable newFocus)
+    {
+        focus = newFocus;
+        newFocus.OnFocused(transform);
+    }
 }

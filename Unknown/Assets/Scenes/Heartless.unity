@@ -3574,7 +3574,7 @@ MonoBehaviour:
   focus: {fileID: 0}
   enemyMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
 --- !u!4 &1319404639 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0,
@@ -4659,6 +4659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 6
+  interactionTransform: {fileID: 1421065514}
 --- !u!195 &1421065508
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4775,6 +4776,12 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: -0.58, y: 1.6, z: 0}
+--- !u!4 &1421065514 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: b73c9ca9bb6a0da47953c006560e7b9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1872228338}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1421079811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7795211947316146764, guid: 1ec12e23354c0fe40858a8192fcf5f64,
