@@ -13,6 +13,18 @@ public class WinLose : MonoBehaviour
     public string newGameSceneName;
     public GameObject[] lose;
     public GameObject[] win;
+    public bool freeze;
+    public bool lockCursor;
+
+
+    public void SetCursorLock(bool value) {
+      lockCursor = value;
+      if(lockCursor = true)
+      {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+      }
+    }
 
 
     public void Awake(){
@@ -58,9 +70,11 @@ public class WinLose : MonoBehaviour
     public void hideWin(){
       foreach(GameObject g in lose){
         g.SetActive(false);
+        freeze = true;
       }
       foreach(GameObject g in win){
         g.SetActive(true);
+        freeze = true;
       }
     }
 
@@ -77,20 +91,13 @@ public class WinLose : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
-
-/*      if(Input.GetKeyDown(KeyCode.P))
-      {
+      if (freeze == true) {
         if(Time.timeScale == 1)
         {
           Time.timeScale = 0;
-          showWin();
-        }
-        else if (Time.timeScale == 0){
-          Time.timeScale = 1;
-          hideWin();
+
+          SetCursorLock(true);
         }
       }
-*/
     }
 }
