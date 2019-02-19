@@ -13,6 +13,8 @@ TagManager:
   - Heart
   - Enemy
   - Health
+  - Spawn
+  - Needle
   layers:
   - Default
   - TransparentFX

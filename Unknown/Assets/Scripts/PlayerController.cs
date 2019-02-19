@@ -14,11 +14,16 @@ public class PlayerController : MonoBehaviour {
     public int health = 0;
 
     private int count = 0;
+    private int playerneedle = 0;
 
     Camera cam;
 
     public GameObject WinScreen;
     public GameObject LoseScreen;
+
+    public GameObject Button;
+
+    //public GameObject Needle;
 
     public GameObject[] lose;
     public GameObject[] win;
@@ -69,7 +74,22 @@ public class PlayerController : MonoBehaviour {
         {
             LoseScreen.SetActive(true);
         }
+
+        else if(other.gameObject.CompareTag("Spawn"))
+        {
+            Button.SetActive(true);
+            Debug.Log(playerneedle);
+        }
+
+        else if(other.gameObject.CompareTag("Needle"))
+        {
+            other.gameObject.SetActive(false);
+            playerneedle = playerneedle + 1;
+            Debug.Log("Needle!");
+            Debug.Log(playerneedle);
+        }
     }
+
 
     /*private void Winc()
     {
