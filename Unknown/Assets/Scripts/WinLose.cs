@@ -18,7 +18,7 @@ public class WinLose : MonoBehaviour
     public bool lockCursor;
 
 
-    public void SetCursorLock(bool value) {
+/*    public void SetCursorLock(bool value) {
       lockCursor = value;
       if(lockCursor = true)
       {
@@ -26,7 +26,7 @@ public class WinLose : MonoBehaviour
         Cursor.visible = true;
       }
     }
-
+*/
 
     public void Awake(){
       MainMenuButton.onClick.AddListener(goMainMenu);
@@ -104,7 +104,7 @@ public class WinLose : MonoBehaviour
         {
           Time.timeScale = 0;
 
-          SetCursorLock(true);
+//          SetCursorLock(true);
         }
       }
     }
