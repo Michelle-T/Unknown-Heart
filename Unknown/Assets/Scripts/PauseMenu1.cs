@@ -99,5 +99,19 @@ public class PauseMenu1 : MonoBehaviour
           hidePaused();
         }
       }
+
+      if (Input.GetButtonDown("joystick button 7")) {
+        if(Time.timeScale == 1)
+        {
+
+          Time.timeScale = 0;
+          showPaused();
+        }
+        else if (Time.timeScale == 0){
+          Time.timeScale = 1;
+          hidePaused();
+        }
+      }
+
     }
 }
