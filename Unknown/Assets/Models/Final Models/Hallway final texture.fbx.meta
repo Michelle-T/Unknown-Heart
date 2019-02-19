@@ -26,67 +26,67 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: bedroom_ceiling
-    second: {fileID: 2100000, guid: 0862f01664daaf243a1e937565be7a5a, type: 2}
+    second: {fileID: 2100000, guid: 787f247efdfb95141b8a38aaab1d9322, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: bedroom_floor
-    second: {fileID: 2100000, guid: 6f3a948f9d2b10e41bc249fae0848724, type: 2}
+    second: {fileID: 2100000, guid: 4223b55500744144b832fc49e65e33ba, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: bedroom_walls
-    second: {fileID: 2100000, guid: dcbc18e5e92281049984cf77cb8f7ef0, type: 2}
+    second: {fileID: 2100000, guid: 638282db711ff1c4da51469220d27f17, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: end_room_ceiling
-    second: {fileID: 2100000, guid: 774335398f1e7c242840be85020f4f57, type: 2}
+    second: {fileID: 2100000, guid: 0333078b98e155c469169041036aacfc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: end_room_floor
-    second: {fileID: 2100000, guid: f702dde29acbbcb4d82665c6f8bf5116, type: 2}
+    second: {fileID: 2100000, guid: 442e8793346b4784da1f6415632f5a92, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: end_room_walls
-    second: {fileID: 2100000, guid: 23c9245817d25e346a6f7e31953baedb, type: 2}
+    second: {fileID: 2100000, guid: ebfbc77776952274bae522e165a67ea5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: hallway_ceiling
-    second: {fileID: 2100000, guid: d09ec812561db0b439f0d24c0cb5077f, type: 2}
+    second: {fileID: 2100000, guid: 94f9b48658b7609418efd15ea6fac71a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: hallway_floor
-    second: {fileID: 2100000, guid: 487cc390c9d898843bb754008aeade03, type: 2}
+    second: {fileID: 2100000, guid: 0c30fabc72b3ce940b2f8ee1046fc430, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: hallway_walls
-    second: {fileID: 2100000, guid: dbc165f74d2799f43b9be2d0f500e262, type: 2}
+    second: {fileID: 2100000, guid: 38e3da37007de884aac12b44d8bda7ec, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert1
-    second: {fileID: 2100000, guid: 13bdce4b8d4370d43ba34ad9f59b569d, type: 2}
+    second: {fileID: 2100000, guid: 3b380088f2a4a6042b8c01e5323d7bf6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: outside_roof
-    second: {fileID: 2100000, guid: dfdc6afa26133834586fad8f8c14c627, type: 2}
+    second: {fileID: 2100000, guid: 8311d8c4a4634c74fb1a048f2ef4cc9e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: outside_walls
-    second: {fileID: 2100000, guid: d2f16f005497138409f5ed899aa331a0, type: 2}
+    second: {fileID: 2100000, guid: 9e79eaa563382ec42b57e19470336423, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0

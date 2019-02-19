@@ -2,6 +2,8 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
+using System;
 
 public class PlayerController : MonoBehaviour {
 
@@ -35,15 +37,27 @@ public class PlayerController : MonoBehaviour {
                 {
                     SetFocus(interactable);
                 }
-                else if(gameObject.CompareTag("Heart"))
+                else 
                 {
-                    Debug.Log("HEART");
-                    gameObject.SetActive(false);
+                    //OnTriggerEnter(1);
                 }
             }
         }
 	}
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Heart"))
+        {
+            other.gameObject.SetActive(false);
+            count = count + 1;
+            if (other.gameObject.CompareTag("Win"))
+            {
+                other.gameObject.SetActive(true);
+            }
+        }
+    }
+
     void SetFocus(Interactable newFocus)
     {
         focus = newFocus;
