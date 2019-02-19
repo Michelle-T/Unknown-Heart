@@ -103,7 +103,6 @@ public class WinLose : MonoBehaviour
         if(Time.timeScale == 1)
         {
           Time.timeScale = 0;
-
 //          SetCursorLock(true);
         }
       }
