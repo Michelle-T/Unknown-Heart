@@ -11,11 +11,14 @@ public class PlayerController : MonoBehaviour {
 
     public LayerMask enemyMask;
 
+    public int health = 0;
+
     private int count = 0;
 
     Camera cam;
 
     public GameObject WinScreen;
+    public GameObject LoseScreen;
 
     public GameObject[] lose;
     public GameObject[] win;
@@ -60,6 +63,11 @@ public class PlayerController : MonoBehaviour {
             WinScreen.SetActive(true);
             win = GameObject.FindGameObjectsWithTag("Win");
             hideWin();
+        }
+        
+        else if(other.gameObject.CompareTag("Enemy"))
+        {
+            LoseScreen.SetActive(true);
         }
     }
 

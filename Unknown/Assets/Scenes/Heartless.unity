@@ -4991,7 +4991,9 @@ MonoBehaviour:
   enemyMask:
     serializedVersion: 2
     m_Bits: 1024
+  health: 0
   WinScreen: {fileID: 308511507}
+  LoseScreen: {fileID: 529019070}
   lose:
   - {fileID: 529019070}
   win:
@@ -7762,7 +7764,9 @@ MonoBehaviour:
   enemyMask:
     serializedVersion: 2
     m_Bits: 0
+  health: 0
   WinScreen: {fileID: 0}
+  LoseScreen: {fileID: 0}
   lose: []
   win: []
 --- !u!136 &1762939973
@@ -8347,6 +8351,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b73c9ca9bb6a0da47953c006560e7b9a, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b73c9ca9bb6a0da47953c006560e7b9a, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: b73c9ca9bb6a0da47953c006560e7b9a, type: 3}
       propertyPath: m_Layer
