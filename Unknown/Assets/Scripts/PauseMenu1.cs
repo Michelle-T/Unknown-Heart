@@ -100,7 +100,7 @@ public class PauseMenu1 : MonoBehaviour
         }
       }
 
-      if (Input.GetButtonDown("joystick button 7")) {
+/*      if (Input.GetButtonDown("joystick button 7")) {
         if(Time.timeScale == 1)
         {
 
@@ -112,6 +112,6 @@ public class PauseMenu1 : MonoBehaviour
           hidePaused();
         }
       }
-
+*/
     }
 }
