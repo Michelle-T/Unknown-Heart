@@ -77,7 +77,9 @@ public class WinLose : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      if(Input.GetKeyDown(KeyCode.P))
+      
+
+/*      if(Input.GetKeyDown(KeyCode.P))
       {
         if(Time.timeScale == 1)
         {
@@ -89,5 +91,6 @@ public class WinLose : MonoBehaviour
           hideWin();
         }
       }
+*/
     }
 }
