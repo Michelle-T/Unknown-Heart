@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour {
 
     Camera cam;
 
+    public GameObject WinScreen;
+
     public GameObject[] lose;
     public GameObject[] win;
 
@@ -55,6 +57,7 @@ public class PlayerController : MonoBehaviour {
             other.gameObject.SetActive(false);
             count = count + 1;
             Debug.Log("Hi!");
+            WinScreen.SetActive(true);
             win = GameObject.FindGameObjectsWithTag("Win");
             hideWin();
         }
