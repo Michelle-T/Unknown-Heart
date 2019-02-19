@@ -11,12 +11,15 @@ public class PlayerController : MonoBehaviour {
 
     public LayerMask enemyMask;
 
-    private int count;
+    private int count = 0;
 
     Camera cam;
 
-	// Use this for initialization
-	void Start ()
+    public GameObject[] lose;
+    public GameObject[] win;
+
+    // Use this for initialization
+    void Start ()
     {
         cam = Camera.main;
 	}
@@ -51,10 +54,44 @@ public class PlayerController : MonoBehaviour {
         {
             other.gameObject.SetActive(false);
             count = count + 1;
-            if (other.gameObject.CompareTag("Win"))
-            {
-                other.gameObject.SetActive(true);
-            }
+            Debug.Log("Hi!");
+            win = GameObject.FindGameObjectsWithTag("Win");
+            hideWin();
+        }
+    }
+
+    /*private void Winc()
+    {
+        if (count <= 1)
+        {
+            Debug.Log("Hi!");
+            win = GameObject.FindGameObjectsWithTag("Win");
+            hideWin();
+            WinScreen.SetActive(true);
+        }
+    }*/
+
+    public void showWin()
+    {
+        foreach (GameObject g in lose)
+        {
+            g.SetActive(true);
+        }
+        foreach (GameObject g in win)
+        {
+            g.SetActive(false);
+        }
+    }
+
+    public void hideWin()
+    {
+        foreach (GameObject g in lose)
+        {
+            g.SetActive(false);
+        }
+        foreach (GameObject g in win)
+        {
+            g.SetActive(true);
         }
     }
 

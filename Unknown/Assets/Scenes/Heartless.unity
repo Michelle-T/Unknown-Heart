@@ -4991,6 +4991,11 @@ MonoBehaviour:
   enemyMask:
     serializedVersion: 2
     m_Bits: 1024
+  WinScreen: {fileID: 308511507}
+  lose:
+  - {fileID: 529019070}
+  win:
+  - {fileID: 308511507}
 --- !u!114 &1319404644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6097,7 +6102,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 2.79
+  m_Radius: 3.8
   m_Height: 5.22
   m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0}
@@ -7757,6 +7762,9 @@ MonoBehaviour:
   enemyMask:
     serializedVersion: 2
     m_Bits: 0
+  WinScreen: {fileID: 0}
+  lose: []
+  win: []
 --- !u!136 &1762939973
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9567,7 +9575,7 @@ GameObject:
   - component: {fileID: 2134598945}
   m_Layer: 5
   m_Name: WinScreen
-  m_TagString: Untagged
+  m_TagString: Win
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
