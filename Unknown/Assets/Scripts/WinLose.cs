@@ -13,6 +13,7 @@ public class WinLose : MonoBehaviour
     public string newGameSceneName;
     public GameObject[] lose;
     public GameObject[] win;
+    public GameObject[] health;
     public bool freeze;
     public bool lockCursor;
 
@@ -70,10 +71,16 @@ public class WinLose : MonoBehaviour
     public void hideWin(){
       foreach(GameObject g in lose){
         g.SetActive(false);
+        // Pauses game when Game Over screen triggered
         freeze = true;
+        // Hides heart when Game Over screen triggered
+        foreach(GameObject h in health){
+          h.SetActive(false);
+        }
       }
       foreach(GameObject g in win){
         g.SetActive(true);
+        // Pauses game when Win screen triggered
         freeze = true;
       }
     }
@@ -84,6 +91,7 @@ public class WinLose : MonoBehaviour
       Time.timeScale = 1;
       lose = GameObject.FindGameObjectsWithTag("Lose");
       win = GameObject.FindGameObjectsWithTag("Win");
+      health = GameObject.FindGameObjectsWithTag("Health");
       hideWin();
       Awake();
     }

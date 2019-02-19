@@ -12,6 +12,7 @@ TagManager:
   - PickUp
   - Heart
   - Enemy
+  - Health
   layers:
   - Default
   - TransparentFX
